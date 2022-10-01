@@ -49,3 +49,60 @@ body {
     width: auto;
     height: 130px;
 }
+
+/* LADO DIREITO */
+
+#form-side {
+    background-color: #f9fafb;
+    padding: 150px 0;
+}
+
+#form-side > h2 {
+    margin-bottom: 20px;
+}
+
+#form-side > h2,
+#form-side form,
+#form-side p {
+    padding-left: 30px;
+}
+
+#form-side button {
+    margin: 20px 30px;
+}
+
+#form-side form {
+    margin: 40px 0 0;
+    background-color: white;
+}
+
+/* ESTILIZA FORMULÁRIO */
+#form-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-section h2 {
+    padding: 20px 0;
+}
+
+.form-row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.form-row label {
+    display: block;
+    font-size: 12px;
+}
+
+.form-row input {
+    width: 350px;
+    height: 30px;
+    padding: 2px 10px;
+    border-radius: 3px;
+}
+
+.form-row div {
+    margin-right: 60px;
+}
