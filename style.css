@@ -16,6 +16,7 @@
 body {
     display: flex;
     height: 100vh;
+    font-family: sans-serif;
 }
 
 #bg-img {
@@ -80,6 +81,7 @@ body {
 #form-section {
     display: flex;
     flex-direction: column;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 #form-section h2 {
@@ -93,15 +95,21 @@ body {
 
 .form-row label {
     display: block;
-    font-size: 12px;
+    font-size: 11.5px;
+    margin-bottom: 3px;
 }
 
 .form-row input {
-    width: 350px;
+    width: 300px;
     height: 30px;
     padding: 2px 10px;
     border-radius: 3px;
     border: 2px solid #E5E7EB;
+}
+
+.form-row input:focus {
+    border: 2px solid blue;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
 }
 
 .form-row div {
@@ -116,4 +124,5 @@ body {
     background-color: #596D48;
     border: 0;
     border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
