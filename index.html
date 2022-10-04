@@ -18,7 +18,7 @@
     <div id="form-side">
         <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</h2>
         <h2>You know you want to.</h2>
-        <form id="form-section">
+        <form id="form-section" onsubmit="return checkPassword(this)">
             <h2>Let's do this!</h2>
             <div class="form-row">
                 <div>
@@ -43,12 +43,15 @@
             <div class="form-row">
                 <div>
                     <label for="password">PASSWORD *</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="password" name="password1" required>
                 </div>
                 <div>
                     <label for="confirm_password">CONFIRM PASSWORD *</label>
-                    <input type="password" id="confirm_password" name="confirm_passowrd" required>
+                    <input type="password" id="confirm_password" name="password2" required>
                 </div>
+            </div>
+            <div class='error-wrapper'>
+                <div class='pass-error-msg'>* Passwords do not match</div>
             </div>
         </form>
 
